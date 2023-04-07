@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 100%);
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+    height: 100vh;
+}
+
+.container {
+    background: url("./images/bg-main-desktop.png");
+    width: 44rem;
+    height: 100vh;
+    background-repeat: no-repeat;
+    z-index: 0;
+    position: relative;
+}
+
+.card {
+    background-image: url("./images/bg-card-front.png");
+    z-index: 100;
+    width: 28rem;
+    height: 15.5rem;
+    position: absolute;
+    background-repeat: no-repeat;
+    margin-top: 4rem;
+    margin-left: 13rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.container, .card {
+    top: 0;
+    left: 0;
+}
+
+.card2 {
+    background: url("./images/bg-card-back.png");
+    position: absolute;
+    z-index: 100;
+    width: 28rem; 
+    height: 15rem;
+    background-repeat: no-repeat;
+    margin-top: 22rem;
+    margin-left: 19rem;
+}
+
+.card2 p {
+    position: absolute;
+    top: 6.5rem;
+    left: 22.8rem;
+    color: white;
+    font-size: .9rem;
+}
+
+.more-info {
+    display: flex;
+    width: 0%;
+    justify-content: space-between;
+    width: 82%;
+    margin-top: auto;
+    margin-bottom: 1.5rem;
+    font-size: .8rem;
+}
+
+.card-nums {
+    font-size: 1.7rem;
+    letter-spacing: .2rem;
+    position: absolute;
+    top: 9rem;
+}
+
+.parent {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.input-parent3 {
+    display: flex;
+    gap: 1rem;
+}
+
+.input3 input {
+    width: 3.8rem;
+    padding: .8rem .6rem;
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    gap: .5rem;
+}
+
+.input1 input, .input2 input {
+    padding: .8rem 1rem;
+    font-size: 1rem;
+    padding-left: 10px;
+    width: 17rem;
+}
+
+p {
+    font-size: .9rem;
+}
+
+input {
+    outline: transparent;
+}
+
+p {
+    margin-block: .5rem .2rem; 
+}
+
+.cvc {
+    width: 8rem;
+    padding: .8rem .5rem
+}
+
+form {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10rem;
+}
+
+.confirm {
+    padding-block: .9rem;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    width: 100%;
+    color: white;
+    background-color: hsl(278, 68%, 11%);
+    cursor: pointer;
+    border-radius: .5rem;
+}
